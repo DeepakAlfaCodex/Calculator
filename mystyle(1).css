@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Domine", serif;
+  background-color: #121212;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  margin: 0 auto;
+  /* border: 1px solid black; */
+   box-shadow:
+    30px 30px 60px #080808,
+    -10px -10px 30px rgba(255, 255, 255, 0.02);
+  width: 500px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #1a1a1a;
+}
+
+#input-text {
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  font-size: 65px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  font-size: 30px;
+  background-color: #1a1a1a;
+  color: #888;
+  cursor: pointer;
+  box-shadow:
+    8px 8px 16px #0d0d0d,
+    -4px -4px 12px #262626;
+  transform: 0.3s all;
+}
+.gold {
+  color: #d4af37;
+}
+.silver {
+  color: #e0e0e0;
+}
+
+.equal-glow {
+  background: linear-gradient(145deg, #1e1e1e, #141414);
+  color: aqua;
+  box-shadow:
+    8px 8px 16px #0d0d0d,
+    -4px -4px 12px #262626;
+}
+
+.btn:active {
+  box-shadow:
+    inset 6px 6px 10px #0d0d0d,
+    inset -4px -4px 10px #262626;
+  transform: scale(0.98);
+  color: #fff;
+}
+
+.equal-glow:active {
+  color: #00ffcc;
+  box-shadow: inset 4px 4px 10px #000;
+}
